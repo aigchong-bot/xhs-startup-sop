@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>小红书起号五步 SOP｜Jessi 系列合集导览</title>
-  <meta name="description" content="结构化整理 @JessiCao_JC 小红书起号系列：定位→对标→矩阵获客→矩阵基建→引流。含可填写表格，本地保存。" />
+  <title>小红书起号五步 SOP｜课程讲义演示</title>
+  <meta name="description" content="小红书起号五步课程讲义：定位→对标→矩阵获客→矩阵基建→引流。适合直播演示，含可填写表格，本地保存。" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,7 +14,7 @@
     <button class="btn btn-ghost btn-sm menu-btn" id="btnMenu" type="button" aria-label="菜单">☰</button>
     <a class="brand" href="#home" data-nav="home">
       <span class="brand-mark">红</span>
-      <span>起号五步 SOP</span>
+      <span>起号五步 · 讲义</span>
     </a>
     <div class="progress-wrap">
       <div class="progress-label">
@@ -24,6 +24,8 @@
       <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
     </div>
     <div class="top-actions">
+      <button class="btn btn-sm" id="btnNotes" type="button" title="快捷键 T">讲者提示</button>
+      <button class="btn btn-sm" id="btnLarge" type="button" title="快捷键 L">大字</button>
       <button class="btn btn-sm" id="btnExport" type="button">导出</button>
       <button class="btn btn-sm" id="btnClear" type="button">清空</button>
       <button class="btn btn-primary btn-sm" id="btnSave" type="button">保存</button>
@@ -32,7 +34,7 @@
 
   <div class="layout">
     <aside class="sidebar" id="sidebar">
-      <div class="side-label">导航</div>
+      <div class="side-label">课程导航</div>
       <ul class="side-nav">
         <li><a class="side-link" href="#home" data-nav="home"><span class="side-num">◎</span><span>总览路径</span></a></li>
         <li><a class="side-link" href="#s1" data-nav="s1"><span class="side-num">1</span><span>定位：最小可行定位</span></a></li>
@@ -41,21 +43,21 @@
         <li><a class="side-link" href="#s4" data-nav="s4"><span class="side-num">4</span><span>矩阵基建：任务与台账</span></a></li>
         <li><a class="side-link" href="#s5" data-nav="s5"><span class="side-num">5</span><span>引流：分层承接</span></a></li>
       </ul>
-      <div class="side-credit">
-        <strong>观点来源</strong>
-        整理自 <a href="https://x.com/JessiCao_JC" target="_blank" rel="noopener">@JessiCao_JC</a> 五篇原帖。<br />
-        本站为<strong>结构化整理 / 合集导览</strong>，非原文转载。细节以她原文为准。
+      <div class="side-help">
+        <strong>直播快捷键</strong>
+        <kbd>→</kbd> / <kbd>N</kbd> 下一步<br />
+        <kbd>←</kbd> / <kbd>P</kbd> 上一步<br />
+        <kbd>T</kbd> 讲者提示 · <kbd>L</kbd> 大字
       </div>
     </aside>
 
     <main class="main">
 
-      <!-- HOME -->
       <section class="view active" id="view-home">
         <div class="hero">
-          <div class="badge">合集导览 · 非转载</div>
+          <div class="badge">课程讲义 · 直播演示</div>
           <h1>小红书起号五步：从定位到引流</h1>
-          <p class="hero-lead">把 @JessiCao_JC 系列串成一条可点开的路径：每一步看清核心主张、关键公式，并直接填写原帖里提到的表。填写内容保存在你本机浏览器（localStorage）。</p>
+          <p class="hero-lead">把冷启动拆成五块可演示的方法模块：每一步先讲清主张与公式，再现场填写配套表格。填写内容保存在本机浏览器（localStorage），适合边讲边练。</p>
           <div class="path-line">
             <button class="path-chip" type="button" data-nav="s1"><span class="n">1</span>定位</button>
             <button class="path-chip" type="button" data-nav="s2"><span class="n">2</span>对标</button>
@@ -68,6 +70,7 @@
         <div class="notice">
           <strong>贯穿一条线：</strong>先验证「帮谁解决什么」，再谈日更、矩阵与引流。冷启动阶段粉丝是结果；更该验证是否持续回答同一类人、是否给出下一步、点进主页能否看懂你是谁。
         </div>
+        <div class="presenter-note">开场先点这条路径线，强调顺序：定位 → 对标 → 获客结构 → 基建 → 引流。别一上来讲设备/IP。</div>
 
         <div class="card-grid">
           <button class="step-card" type="button" data-nav="s1">
@@ -98,28 +101,26 @@
         </div>
 
         <div class="section">
-          <h3><span class="dot"></span>本站包含的可填表</h3>
+          <h3><span class="dot"></span>本讲义包含的可填表</h3>
           <ul class="bullets">
             <li><strong>定位：</strong>主任务句 · 三张清单 · 用户四问 · 定位句 · 12 选题树 · 发布前 7 项 · 7 天闭环勾选</li>
-            <li><strong>对标：</strong>定位小卡 · 对标账号表 · 笔记拆解 6 项 · 原创选题 3 条</li>
+            <li><strong>对标：</strong>定位小卡 · 对标账号表 · 笔记拆解 6 项 · 选题 3 条</li>
             <li><strong>矩阵获客：</strong>账号角色公式 · 四类内容规划 · 三层标签 · 主页 / 转化检查</li>
             <li><strong>矩阵基建：</strong>账号分工表 · 内容任务卡 · 异常记录 · 扩号门槛勾选</li>
             <li><strong>引流：</strong>私信送达自检 · 引流 7 天测试表 · 站内承接自检句</li>
           </ul>
         </div>
 
-        <p class="footer-note">建议阅读顺序：定位 → 对标 → 矩阵获客 → 矩阵基建 → 引流。每步页面顶部可跳转原文。打印本页也可导出填写痕迹（浏览器打印）。</p>
+        <p class="footer-note">建议演示顺序：定位 → 对标 → 矩阵获客 → 矩阵基建 → 引流。键盘 N / P 或方向键翻页；顶栏可开「大字」与「讲者提示」。</p>
       </section>
 
-      <!-- STEP 1 -->
       <section class="view" id="view-s1">
         <div class="step-header">
           <div class="step-kicker">STEP 01 · 定位</div>
           <h2>先别急着发内容，先搭好最小可行定位</h2>
-          <p class="claim">冷启动第一步不是日更，也不是精装修主页，而是做出一个可验证的工作假设：长期帮哪一类人解决什么问题、为什么该你说、接下来能围绕它写出哪些内容。</p>
-          <div class="step-meta">
-            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2107674848457843182" target="_blank" rel="noopener">原文 · 起号第一步 SOP ↗</a>
-          </div>
+          <p class="claim">冷启动第一步通常不是日更，也不是精装修主页，而是做出一个可验证的工作假设：长期帮哪一类人解决什么问题、为什么该你说、接下来能围绕它写出哪些内容。</p>
+          <div class="step-meta"><span class="step-pill">演示块 · 公式 + 可填表</span></div>
+          <div class="presenter-note">现场先写「主任务句」，再带学员填三张清单；定位句最后收口。强调：定位是过滤器，不是简介文案。</div>
         </div>
 
         <div class="section">
@@ -135,11 +136,14 @@
 
         <div class="section">
           <h3><span class="dot"></span>关键公式</h3>
-          <div class="formula">
-            「我为<strong class="hl">【处在什么场景的人】</strong>，持续拆解<strong class="hl">【哪一类问题】</strong>，主要用<strong class="hl">【什么经验或内容形式】</strong>，帮助他们<strong class="hl">【完成什么下一步】</strong>。」
-          </div>
-          <div class="formula">
-            做完后应拿到四样东西：<strong class="hl">一句定位</strong> · <strong class="hl">一个目标用户场景</strong> · <strong class="hl">三条内容主线</strong> · <strong class="hl">首批 12 个选题</strong>
+          <div class="demo-block">
+            <div class="demo-label">现场演示</div>
+            <div class="formula">
+              「为<strong class="hl">【处在什么场景的人】</strong>，持续拆解<strong class="hl">【哪一类问题】</strong>，主要用<strong class="hl">【什么经验或内容形式】</strong>，帮助他们<strong class="hl">【完成什么下一步】</strong>。」
+            </div>
+            <div class="formula">
+              做完后通常应拿到四样东西：<strong class="hl">一句定位</strong> · <strong class="hl">一个目标用户场景</strong> · <strong class="hl">三条内容主线</strong> · <strong class="hl">首批 12 个选题</strong>
+            </div>
           </div>
         </div>
 
@@ -147,9 +151,9 @@
           <h3><span class="dot"></span>可填：账号主任务</h3>
           <div class="form-block">
             <div class="fb-title">接下来的 30 篇，希望账号先完成什么？</div>
-            <div class="fb-hint">30 篇不是平台规定，只是帮你暂时收住边界。答案可以是：积累专业认知 / 找到第一批客户 / 清晰个人标签 / 验证某类选题。</div>
+            <div class="fb-hint">30 篇不是平台规定，只是帮你暂时收住边界。常见答案：积累专业认知 / 找到第一批客户 / 清晰个人标签 / 验证某类选题。</div>
             <div class="field">
-              <label>「接下来的 30 篇内容，我希望这个账号先帮我完成 ______。」</label>
+              <label>「接下来的 30 篇内容，希望这个账号先帮我完成 ______。」</label>
               <textarea data-field="s1_task" placeholder="例如：验证「AI + 账号冷启动」选题是否有人需要，并积累第一批可收藏的方法内容"></textarea>
             </div>
             <div class="field">
@@ -168,17 +172,17 @@
         <div class="section">
           <h3><span class="dot"></span>可填：三张清单</h3>
           <div class="form-block">
-            <div class="fb-title">① 我做过什么</div>
+            <div class="fb-title">① 做过什么</div>
             <div class="fb-hint">写具体项目、过程、踩过的坑、用过的工具、已跑通的微小结果。不要只写「懂运营」。</div>
             <div class="field"><textarea data-field="s1_list1" placeholder="一条一条列…"></textarea></div>
           </div>
           <div class="form-block">
-            <div class="fb-title">② 别人经常问我什么</div>
+            <div class="fb-title">② 别人经常问什么</div>
             <div class="fb-hint">翻聊天、群、评论、私信，把重复问题原样记下来。</div>
             <div class="field"><textarea data-field="s1_list2" placeholder="原样记下重复问题…"></textarea></div>
           </div>
           <div class="form-block">
-            <div class="fb-title">③ 我愿意持续研究什么</div>
+            <div class="fb-title">③ 愿意持续研究什么</div>
             <div class="fb-hint">需要一个至少愿意继续验证三个月的主题。</div>
             <div class="field"><textarea data-field="s1_list3" placeholder="愿意持续验证的主题…"></textarea></div>
           </div>
@@ -190,7 +194,7 @@
             <div class="field"><label>他现在正准备完成什么任务？</label><textarea data-field="s1_u1"></textarea></div>
             <div class="field"><label>他卡在哪一步？</label><textarea data-field="s1_u2"></textarea></div>
             <div class="field"><label>他已经试过什么，但为什么没解决？</label><textarea data-field="s1_u3"></textarea></div>
-            <div class="field"><label>看完你的内容，他下一步能做什么？</label><textarea data-field="s1_u4"></textarea></div>
+            <div class="field"><label>看完内容，他下一步能做什么？</label><textarea data-field="s1_u4"></textarea></div>
           </div>
         </div>
 
@@ -198,7 +202,7 @@
           <h3><span class="dot"></span>可填：定位句</h3>
           <div class="form-block">
             <div class="fb-hint">这句话首先是给你自己用的过滤器，不必原样放进简介。</div>
-            <div class="field"><label>完整定位句</label><textarea data-field="s1_pos" placeholder="我为【…】，持续拆解【…】，主要用【…】，帮助他们【…】。"></textarea></div>
+            <div class="field"><label>完整定位句</label><textarea data-field="s1_pos" placeholder="为【…】，持续拆解【…】，主要用【…】，帮助他们【…】。"></textarea></div>
           </div>
         </div>
 
@@ -239,10 +243,10 @@
         <div class="section">
           <h3><span class="dot"></span>发布前清单 + 7 天闭环</h3>
           <div class="form-block">
-            <div class="fb-title">发布前检查（原文 7 项）</div>
+            <div class="fb-title">发布前检查（7 项）</div>
             <div class="check-list">
-              <label class="check-item"><input type="checkbox" data-field="s1_ck1" /> 我能否用一句话说清这个账号先服务谁？</label>
-              <label class="check-item"><input type="checkbox" data-field="s1_ck2" /> 我写的是一个具体场景，而不是宽泛人群吗？</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_ck1" /> 能否用一句话说清这个账号先服务谁？</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_ck2" /> 写的是一个具体场景，而不是宽泛人群吗？</label>
               <label class="check-item"><input type="checkbox" data-field="s1_ck3" /> 定位里有真实经历或证据支撑吗？</label>
               <label class="check-item"><input type="checkbox" data-field="s1_ck4" /> 能围绕它列出至少 12 个不重复的选题吗？</label>
               <label class="check-item"><input type="checkbox" data-field="s1_ck5" /> 问题层 / 方法层 / 证据层是否都已有内容？</label>
@@ -270,15 +274,13 @@
         </div>
       </section>
 
-      <!-- STEP 2 -->
       <section class="view" id="view-s2">
         <div class="step-header">
           <div class="step-kicker">STEP 02 · 对标</div>
-          <h2>别急着抄爆款，你可能连对标账号都找错了</h2>
-          <p class="claim">对标最容易停在「收藏爆款」。真正漏掉的是：这个账号为什么适合它、哪一部分适合你。做完应留下 5–10 个有明确学习用途的账号、几份完整拆解、若干有自己材料支撑的选题。</p>
-          <div class="step-meta">
-            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2108755538301579381" target="_blank" rel="noopener">原文 · 找对标 ↗</a>
-          </div>
+          <h2>别急着抄爆款，可能连对标账号都找错了</h2>
+          <p class="claim">对标最容易停在「收藏爆款」。常见漏掉的是：这个账号为什么适合它、哪一部分适合你。做完通常应留下 5–10 个有明确学习用途的账号、几份完整拆解、若干有自己材料支撑的选题。</p>
+          <div class="step-meta"><span class="step-pill">演示块 · 六项拆解 + 对标表</span></div>
+          <div class="presenter-note">先填「搜索前定位小卡」，再找号。直播时可拆一篇较好 + 一篇普通对照。强调：结构可以学，经历不能借。</div>
         </div>
 
         <div class="section">
@@ -287,29 +289,32 @@
             <li><strong>先有自己的定位卡，再找对标。</strong>顺序反了，容易只抄标题和封面。</li>
             <li><strong>粉丝量不是第一筛选器。</strong>更有用：起点与制作条件是否接近、效果是否只靠一篇、评论里是不是你要服务的人、对方优势你有没有材料支撑。</li>
             <li><strong>四入口找样本：</strong>关键词搜索 · 推荐流补样本 · 话题页回头查作者 · 必要时再用数据工具（筛完仍要回真实主页核对）。</li>
-            <li><strong>结构可以学，经历不能借。</strong>拆完多问：我的材料能回答哪一部分？</li>
+            <li><strong>结构可以学，经历不能借。</strong>拆完多问：自己的材料能回答哪一部分？</li>
           </ul>
         </div>
 
         <div class="section">
           <h3><span class="dot"></span>单篇拆解 6 项</h3>
-          <div class="tag-row">
-            <span class="tag t1">人群与问题</span>
-            <span class="tag t1">选题切口</span>
-            <span class="tag t2">标题承诺</span>
-            <span class="tag t2">封面信息</span>
-            <span class="tag t3">正文证据</span>
-            <span class="tag t3">评论追问</span>
+          <div class="demo-block">
+            <div class="demo-label">现场演示</div>
+            <div class="tag-row" style="padding:8px 12px 4px">
+              <span class="tag t1">人群与问题</span>
+              <span class="tag t1">选题切口</span>
+              <span class="tag t2">标题承诺</span>
+              <span class="tag t2">封面信息</span>
+              <span class="tag t3">正文证据</span>
+              <span class="tag t3">评论追问</span>
+            </div>
           </div>
         </div>
 
         <div class="section">
           <h3><span class="dot"></span>可填：搜索前定位小卡</h3>
           <div class="form-block">
-            <div class="field"><label>我想服务谁</label><textarea data-field="s2_who"></textarea></div>
+            <div class="field"><label>想服务谁</label><textarea data-field="s2_who"></textarea></div>
             <div class="field"><label>她 / 他具体卡在哪</label><textarea data-field="s2_stuck"></textarea></div>
-            <div class="field"><label>我能提供什么</label><textarea data-field="s2_offer"></textarea></div>
-            <div class="field"><label>我现阶段能做到什么（产能 / 形式）</label><textarea data-field="s2_capacity"></textarea></div>
+            <div class="field"><label>能提供什么</label><textarea data-field="s2_offer"></textarea></div>
+            <div class="field"><label>现阶段能做到什么（产能 / 形式）</label><textarea data-field="s2_capacity"></textarea></div>
             <div class="field"><label>账号希望怎么产生收入（可选）</label><textarea data-field="s2_revenue"></textarea></div>
             <div class="field"><label>搜索词（人群 + 场景 + 问题）</label><textarea data-field="s2_keywords" placeholder="例如：小个子通勤穿搭；梨形身材上班怎么穿"></textarea></div>
           </div>
@@ -326,7 +331,7 @@
                     <th style="width:14%">账号</th>
                     <th style="width:12%">粉丝/形式</th>
                     <th style="width:18%">服务人群</th>
-                    <th style="width:22%">我要学什么</th>
+                    <th style="width:22%">要学什么</th>
                     <th style="width:16%">暂时学不了</th>
                     <th style="width:12%">决定</th>
                   </tr>
@@ -392,7 +397,7 @@
             <div class="field"><label>④ 封面信息（对比 / 结果 / 装饰？）</label><textarea data-field="s2_na_4"></textarea></div>
             <div class="field"><label>⑤ 正文证据</label><textarea data-field="s2_na_5"></textarea></div>
             <div class="field"><label>⑥ 评论追问 → 能否写成下一篇？</label><textarea data-field="s2_na_6"></textarea></div>
-            <div class="field"><label>我的材料能回答哪一部分？原创切口</label><textarea data-field="s2_na_mine"></textarea></div>
+            <div class="field"><label>自己的材料能回答哪一部分？选题切口</label><textarea data-field="s2_na_mine"></textarea></div>
           </div>
           <div class="form-block">
             <div class="fb-title">拆解 B · 普通一篇（对照看差别）</div>
@@ -401,12 +406,12 @@
               <div class="field"><label>发布 / 观察日期</label><input data-field="s2_nb_date" /></div>
             </div>
             <div class="field"><label>①–⑥ 简记 + 与较好篇的关键差别</label><textarea data-field="s2_nb_diff"></textarea></div>
-            <div class="field"><label>我的原创切口</label><textarea data-field="s2_nb_mine"></textarea></div>
+            <div class="field"><label>可落地的选题切口</label><textarea data-field="s2_nb_mine"></textarea></div>
           </div>
         </div>
 
         <div class="section">
-          <h3><span class="dot"></span>可填：3 个原创选题</h3>
+          <h3><span class="dot"></span>可填：3 个选题</h3>
           <div class="form-block">
             <div class="fb-hint">每个写清：服务谁、标题承诺什么、用什么证据、读者看完能做什么。</div>
             <div class="field"><label>选题 1</label><textarea data-field="s2_topic1"></textarea></div>
@@ -421,15 +426,13 @@
         </div>
       </section>
 
-      <!-- STEP 3 -->
       <section class="view" id="view-s3">
         <div class="step-header">
           <div class="step-kicker">STEP 03 · 矩阵获客</div>
           <h2>矩阵怎么获客：角色分工，而不是多号复制</h2>
-          <p class="claim">矩阵最难的不是账号数量，而是每个号有效。换头像、换标题、发同质内容，叫复制，不叫矩阵。真正能带来获客的矩阵，是让不同账号从不同入口，解决同一个客户的不同问题。</p>
-          <div class="step-meta">
-            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2105899003359756431" target="_blank" rel="noopener">原文 · 矩阵获客 ↗</a>
-          </div>
+          <p class="claim">矩阵最难的通常不是账号数量，而是每个号有效。换头像、换标题、发同质内容，叫复制，不叫矩阵。能带来获客的矩阵，常见做法是让不同账号从不同入口，解决同一类客户的不同问题。</p>
+          <div class="step-meta"><span class="step-pill">演示块 · 四类内容 + 角色卡</span></div>
+          <div class="presenter-note">先讲「角色公式」，再现场把一个主题拆成搜索/经验/案例/观点四格。强调主页链路：曝光 → 主页 → 置顶 → 私信。</div>
         </div>
 
         <div class="section">
@@ -440,14 +443,17 @@
             <li><strong>一个主题至少拆四类：</strong>搜索型 / 经验型 / 案例型 / 观点型。</li>
             <li><strong>标签分三层：</strong>大流量标签扩触达、问题标签接明确意图、成交标签离咨询更近；不要所有笔记都抢大词。</li>
             <li><strong>真正决定获客的是主页，不是单篇。</strong>链路：曝光 → 主页 → 置顶 → 私信 / 咨询。</li>
-            <li><strong>先跑通「一个主号 + 一个测试号」。</strong>低曝光但精准咨询，有时比空热闹更值得放大。</li>
+            <li><strong>常见起步是「一个主号 + 一个测试号」。</strong>低曝光但精准咨询，有时比空热闹更值得放大。</li>
           </ul>
         </div>
 
         <div class="section">
           <h3><span class="dot"></span>关键公式</h3>
-          <div class="formula">账号角色 = <strong class="hl">目标人群</strong> + <strong class="hl">高频问题</strong> + <strong class="hl">内容视角</strong></div>
-          <div class="formula">案例四件事：问题 → 原来怎么做 → 哪步变了 → 结果</div>
+          <div class="demo-block">
+            <div class="demo-label">现场演示</div>
+            <div class="formula">账号角色 = <strong class="hl">目标人群</strong> + <strong class="hl">高频问题</strong> + <strong class="hl">内容视角</strong></div>
+            <div class="formula">案例四件事：问题 → 原来怎么做 → 哪步变了 → 结果</div>
+          </div>
         </div>
 
         <div class="section">
@@ -512,15 +518,13 @@
         </div>
       </section>
 
-      <!-- STEP 4 -->
       <section class="view" id="view-s4">
         <div class="step-header">
           <div class="step-kicker">STEP 04 · 矩阵基建</div>
           <h2>账号准备、设备、IP 与异常：管理清楚、一次改一个变量</h2>
-          <p class="claim">基建重点不是「防关联玄学」，而是管理清楚、有记录、能归因：分工表、台账、设备对应、异常按症状排查、素材库与内容任务卡。</p>
-          <div class="step-meta">
-            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2106653568300192062" target="_blank" rel="noopener">原文 · 矩阵实操手册 ↗</a>
-          </div>
+          <p class="claim">基建重点通常不是「防关联玄学」，而是管理清楚、有记录、能归因：分工表、台账、设备对应、异常按症状排查、素材库与内容任务卡。</p>
+          <div class="step-meta"><span class="step-pill">演示块 · 任务卡 + 异常台账</span></div>
+          <div class="presenter-note">这一步偏进阶。直播可略讲设备，重点演示「内容任务卡」和「扩号门槛勾选」。异常：一次只改一个变量。</div>
         </div>
 
         <div class="section">
@@ -538,7 +542,7 @@
         <div class="section">
           <h3><span class="dot"></span>可填：账号分工表</h3>
           <div class="form-block">
-            <div class="fb-hint">示例结构来自原文：产品教程号 / 岗位场景号 / 案例解答号。每个号补齐：负责人、每周可投入时间、审核人、咨询承接人。</div>
+            <div class="fb-hint">常见分工示例：产品教程号 / 岗位场景号 / 案例解答号。每个号补齐：负责人、每周可投入时间、审核人、咨询承接人。</div>
             <div class="table-wrap">
               <table class="fill-table">
                 <thead>
@@ -580,15 +584,17 @@
 
         <div class="section">
           <h3><span class="dot"></span>可填：内容任务卡</h3>
-          <div class="form-block">
-            <div class="fb-title">下一篇任务卡</div>
-            <div class="field"><label>发给谁看</label><input data-field="s4_card_who" /></div>
-            <div class="field"><label>回答什么具体问题</label><textarea data-field="s4_card_q"></textarea></div>
-            <div class="field"><label>用哪些素材支撑</label><textarea data-field="s4_card_mat"></textarea></div>
-            <div class="field"><label>读者看完能做什么</label><textarea data-field="s4_card_next"></textarea></div>
-            <div class="field-row">
-              <div class="field"><label>发在哪个账号</label><input data-field="s4_card_acc" /></div>
-              <div class="field"><label>由谁审核</label><input data-field="s4_card_review" /></div>
+          <div class="demo-block">
+            <div class="demo-label">现场演示 · 下一篇任务卡</div>
+            <div class="form-block" style="margin:8px;border:none">
+              <div class="field"><label>发给谁看</label><input data-field="s4_card_who" /></div>
+              <div class="field"><label>回答什么具体问题</label><textarea data-field="s4_card_q"></textarea></div>
+              <div class="field"><label>用哪些素材支撑</label><textarea data-field="s4_card_mat"></textarea></div>
+              <div class="field"><label>读者看完能做什么</label><textarea data-field="s4_card_next"></textarea></div>
+              <div class="field-row">
+                <div class="field"><label>发在哪个账号</label><input data-field="s4_card_acc" /></div>
+                <div class="field"><label>由谁审核</label><input data-field="s4_card_review" /></div>
+              </div>
             </div>
           </div>
         </div>
@@ -596,7 +602,7 @@
         <div class="section">
           <h3><span class="dot"></span>可填：异常记录</h3>
           <div class="form-block">
-            <div class="fb-hint">统一记录字段来自原文。一次只改变一个条件。</div>
+            <div class="fb-hint">建议统一记录字段。一次只改变一个条件。</div>
             <div class="field-row">
               <div class="field"><label>发生时间</label><input data-field="s4_ex_time" /></div>
               <div class="field"><label>账号与设备</label><input data-field="s4_ex_acc" /></div>
@@ -606,7 +612,7 @@
               <option>登录失败 / 收不到验证码</option>
               <option>笔记或功能受限</option>
               <option>发布成功但阅读偏低</option>
-              <option>有阅读或咨询但无转化</option>
+              <option>有阅读或咨询但可转化</option>
               <option>其他</option>
             </select></div>
             <div class="field"><label>平台提示</label><textarea data-field="s4_ex_tip"></textarea></div>
@@ -634,15 +640,13 @@
         </div>
       </section>
 
-      <!-- STEP 5 -->
       <section class="view" id="view-s5">
         <div class="step-header">
           <div class="step-kicker">STEP 05 · 引流</div>
           <h2>低风险引流：先分层承接，硬导流克制</h2>
-          <p class="claim">「发微信号」不是固定技巧，更像持续变化的测试题。核心逻辑：能用平台内工具解决的，先站内；必须外跳的，小范围测；高风险动作当观察项，不当默认 SOP。</p>
-          <div class="step-meta">
-            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2108027588052742415" target="_blank" rel="noopener">原文 · 引流教程 ↗</a>
-          </div>
+          <p class="claim">「发微信号」通常不是固定技巧，更像持续变化的测试题。常见方法是：能用平台内工具解决的，先站内；必须外跳的，小范围测；高风险动作当观察项，不当默认 SOP。</p>
+          <div class="step-meta"><span class="step-pill">演示块 · 自检句 + 7 天测试表</span></div>
+          <div class="presenter-note">先问「不丢联系方式，站内能否往前走一步」。再演示私信自检表。强调：可复用的是测试习惯，不是某个暗号。</div>
         </div>
 
         <div class="section">
@@ -659,14 +663,19 @@
 
         <div class="section">
           <h3><span class="dot"></span>关键自检</h3>
-          <div class="formula">如果不丢联系方式，这个用户在站内还能不能往前走一步？走不了 → 先补站内承接，再谈外跳。</div>
-          <div class="field"><label>你的回答 / 缺口</label><textarea data-field="s5_selfcheck" placeholder="站内还能怎么往前走？缺什么？"></textarea></div>
+          <div class="demo-block">
+            <div class="demo-label">现场演示</div>
+            <div class="formula">如果不丢联系方式，这个用户在站内还能不能往前走一步？走不了 → 先补站内承接，再谈外跳。</div>
+            <div class="form-block" style="margin:8px;border:none">
+              <div class="field"><label>你的回答 / 缺口</label><textarea data-field="s5_selfcheck" placeholder="站内还能怎么往前走？缺什么？"></textarea></div>
+            </div>
+          </div>
         </div>
 
         <div class="section">
           <h3><span class="dot"></span>可填：私信送达自检（最小测试）</h3>
           <div class="form-block">
-            <div class="fb-hint">原文建议字段：发送账号、接收账号、内容类型、长按后是否有「引用」、对方是否实际看到。内容类型：纯文字 / 图片 / 表情 / 商品 / 群聊入口 / 笔记入口。</div>
+            <div class="fb-hint">建议字段：发送账号、接收账号、内容类型、长按后是否有「引用」、对方是否实际看到。内容类型：纯文字 / 图片 / 表情 / 商品 / 群聊入口 / 笔记入口。</div>
             <div class="table-wrap">
               <table class="fill-table">
                 <thead>
@@ -810,7 +819,7 @@
         </div>
 
         <div class="section">
-          <h3><span class="dot"></span>原文建议执行顺序（勾选）</h3>
+          <h3><span class="dot"></span>建议执行顺序（勾选）</h3>
           <div class="form-block">
             <div class="check-list">
               <label class="check-item"><input type="checkbox" data-field="s5_ord1" /> ① 先补齐平台内承接（商品 / FAQ / 资料说明 / 评论话术）</label>
@@ -828,11 +837,17 @@
         </div>
 
         <p class="footer-note">
-          以上观点整理自 <a href="https://x.com/JessiCao_JC" target="_blank" rel="noopener">@JessiCao_JC</a> 五篇原帖，本站为结构化整理 / 合集导览，非原文转载。所有引流方法都不能保证完全合规；平台规则会变，细节与模板以她原文为准。
+          本页为课程讲义演示材料。引流方法都不能保证完全合规；平台规则会变，请以官方最新规则为准，并小步测试。
         </p>
       </section>
 
     </main>
+  </div>
+
+  <div class="step-rail" aria-label="步骤切换">
+    <button class="btn btn-sm" id="btnPrev" type="button">← 上一步</button>
+    <span class="rail-label" id="railLabel">总览</span>
+    <button class="btn btn-primary btn-sm" id="btnNext" type="button">下一步 →</button>
   </div>
 
   <div class="toast" id="toast" role="status"></div>

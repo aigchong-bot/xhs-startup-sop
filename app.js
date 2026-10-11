@@ -1,9 +1,19 @@
 (function () {
-  const STORAGE_KEY = "xhs-sop-jessi-v1";
+  const STORAGE_KEY = "xhs-sop-course-v2";
   const STEP_IDS = ["home", "s1", "s2", "s3", "s4", "s5"];
+  const STEP_LABELS = {
+    home: "总览",
+    s1: "1 / 5 定位",
+    s2: "2 / 5 对标",
+    s3: "3 / 5 矩阵获客",
+    s4: "4 / 5 矩阵基建",
+    s5: "5 / 5 引流",
+  };
 
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+  let currentId = "home";
 
   function load() {
     try {
@@ -86,8 +96,14 @@
     });
   }
 
+  function updateRail() {
+    const label = $("#railLabel");
+    if (label) label.textContent = STEP_LABELS[currentId] || currentId;
+  }
+
   function showView(id) {
     if (!STEP_IDS.includes(id)) id = "home";
+    currentId = id;
     $$(".view").forEach((v) => v.classList.toggle("active", v.id === "view-" + id));
     $$(".side-link").forEach((l) =>
       l.classList.toggle("active", l.getAttribute("data-nav") === id)
@@ -95,6 +111,13 @@
     history.replaceState(null, "", "#" + id);
     window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
     closeMenu();
+    updateRail();
+  }
+
+  function stepDelta(delta) {
+    const idx = STEP_IDS.indexOf(currentId);
+    const next = STEP_IDS[Math.max(0, Math.min(STEP_IDS.length - 1, idx + delta))];
+    if (next !== currentId) showView(next);
   }
 
   function openMenu() {
@@ -136,9 +159,40 @@
     toast("已导出 JSON");
   }
 
+  function isTypingTarget(el) {
+    if (!el) return false;
+    const tag = el.tagName;
+    return tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || el.isContentEditable;
+  }
+
+  function toggleNotes() {
+    document.body.classList.toggle("notes-on");
+    const on = document.body.classList.contains("notes-on");
+    $("#btnNotes")?.classList.toggle("on", on);
+    localStorage.setItem("xhs-sop-notes", on ? "1" : "0");
+    toast(on ? "讲者提示已开" : "讲者提示已关");
+  }
+
+  function toggleLarge() {
+    document.body.classList.toggle("large-type");
+    const on = document.body.classList.contains("large-type");
+    $("#btnLarge")?.classList.toggle("on", on);
+    localStorage.setItem("xhs-sop-large", on ? "1" : "0");
+    toast(on ? "大字模式已开" : "大字模式已关");
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     applyFields(load());
     updateProgress();
+
+    if (localStorage.getItem("xhs-sop-notes") === "1") {
+      document.body.classList.add("notes-on");
+      $("#btnNotes")?.classList.add("on");
+    }
+    if (localStorage.getItem("xhs-sop-large") === "1") {
+      document.body.classList.add("large-type");
+      $("#btnLarge")?.classList.add("on");
+    }
 
     const hash = (location.hash || "#home").slice(1);
     showView(STEP_IDS.includes(hash) ? hash : "home");
@@ -171,8 +225,26 @@
     $("#btnExport")?.addEventListener("click", exportJson);
     $("#btnMenu")?.addEventListener("click", openMenu);
     $("#backdrop")?.addEventListener("click", closeMenu);
+    $("#btnNotes")?.addEventListener("click", toggleNotes);
+    $("#btnLarge")?.addEventListener("click", toggleLarge);
+    $("#btnPrev")?.addEventListener("click", () => stepDelta(-1));
+    $("#btnNext")?.addEventListener("click", () => stepDelta(1));
 
-    // Autosave hint
+    document.addEventListener("keydown", (e) => {
+      if (isTypingTarget(e.target)) return;
+      if (e.key === "ArrowRight" || e.key === "n" || e.key === "N" || e.key === "PageDown") {
+        e.preventDefault();
+        stepDelta(1);
+      } else if (e.key === "ArrowLeft" || e.key === "p" || e.key === "P" || e.key === "PageUp") {
+        e.preventDefault();
+        stepDelta(-1);
+      } else if (e.key === "t" || e.key === "T") {
+        toggleNotes();
+      } else if (e.key === "l" || e.key === "L") {
+        toggleLarge();
+      }
+    });
+
     let saveTimer;
     document.body.addEventListener("input", (e) => {
       if (!e.target.matches("[data-field]")) return;
