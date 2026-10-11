@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>小红书起号五步 SOP｜Jessi 系列合集导览</title>
+  <meta name="description" content="结构化整理 @JessiCao_JC 小红书起号系列：定位→对标→矩阵获客→矩阵基建→引流。含可填写表格，本地保存。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="backdrop" id="backdrop"></div>
+
+  <header class="topbar">
+    <button class="btn btn-ghost btn-sm menu-btn" id="btnMenu" type="button" aria-label="菜单">☰</button>
+    <a class="brand" href="#home" data-nav="home">
+      <span class="brand-mark">红</span>
+      <span>起号五步 SOP</span>
+    </a>
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span>填写进度</span>
+        <span id="progressLabel">0 / 5 步已有填写</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+    <div class="top-actions">
+      <button class="btn btn-sm" id="btnExport" type="button">导出</button>
+      <button class="btn btn-sm" id="btnClear" type="button">清空</button>
+      <button class="btn btn-primary btn-sm" id="btnSave" type="button">保存</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-label">导航</div>
+      <ul class="side-nav">
+        <li><a class="side-link" href="#home" data-nav="home"><span class="side-num">◎</span><span>总览路径</span></a></li>
+        <li><a class="side-link" href="#s1" data-nav="s1"><span class="side-num">1</span><span>定位：最小可行定位</span></a></li>
+        <li><a class="side-link" href="#s2" data-nav="s2"><span class="side-num">2</span><span>对标：拆到能动手</span></a></li>
+        <li><a class="side-link" href="#s3" data-nav="s3"><span class="side-num">3</span><span>矩阵获客：角色分工</span></a></li>
+        <li><a class="side-link" href="#s4" data-nav="s4"><span class="side-num">4</span><span>矩阵基建：任务与台账</span></a></li>
+        <li><a class="side-link" href="#s5" data-nav="s5"><span class="side-num">5</span><span>引流：分层承接</span></a></li>
+      </ul>
+      <div class="side-credit">
+        <strong>观点来源</strong>
+        整理自 <a href="https://x.com/JessiCao_JC" target="_blank" rel="noopener">@JessiCao_JC</a> 五篇原帖。<br />
+        本站为<strong>结构化整理 / 合集导览</strong>，非原文转载。细节以她原文为准。
+      </div>
+    </aside>
+
+    <main class="main">
+
+      <!-- HOME -->
+      <section class="view active" id="view-home">
+        <div class="hero">
+          <div class="badge">合集导览 · 非转载</div>
+          <h1>小红书起号五步：从定位到引流</h1>
+          <p class="hero-lead">把 @JessiCao_JC 系列串成一条可点开的路径：每一步看清核心主张、关键公式，并直接填写原帖里提到的表。填写内容保存在你本机浏览器（localStorage）。</p>
+          <div class="path-line">
+            <button class="path-chip" type="button" data-nav="s1"><span class="n">1</span>定位</button>
+            <button class="path-chip" type="button" data-nav="s2"><span class="n">2</span>对标</button>
+            <button class="path-chip" type="button" data-nav="s3"><span class="n">3</span>矩阵获客</button>
+            <button class="path-chip" type="button" data-nav="s4"><span class="n">4</span>矩阵基建</button>
+            <button class="path-chip" type="button" data-nav="s5"><span class="n">5</span>引流</button>
+          </div>
+        </div>
+
+        <div class="notice">
+          <strong>贯穿一条线：</strong>先验证「帮谁解决什么」，再谈日更、矩阵与引流。冷启动阶段粉丝是结果；更该验证是否持续回答同一类人、是否给出下一步、点进主页能否看懂你是谁。
+        </div>
+
+        <div class="card-grid">
+          <button class="step-card" type="button" data-nav="s1">
+            <div class="sc-top"><span class="sc-num">STEP 01</span><span class="sc-status">未开始</span></div>
+            <h3>定位</h3>
+            <p>先别日更。做出最小可行定位：一句过滤器、三张清单、12 选题与三层内容树。</p>
+          </button>
+          <button class="step-card" type="button" data-nav="s2">
+            <div class="sc-top"><span class="sc-num">STEP 02</span><span class="sc-status">未开始</span></div>
+            <h3>对标</h3>
+            <p>别用粉丝量当唯一标准。四入口找号，六项拆笔记，留下有学习用途的账号资产。</p>
+          </button>
+          <button class="step-card" type="button" data-nav="s3">
+            <div class="sc-top"><span class="sc-num">STEP 03</span><span class="sc-status">未开始</span></div>
+            <h3>矩阵获客</h3>
+            <p>矩阵是角色分工不是复制号。一主题拆四类内容；真正决定获客的是主页。</p>
+          </button>
+          <button class="step-card" type="button" data-nav="s4">
+            <div class="sc-top"><span class="sc-num">STEP 04</span><span class="sc-status">未开始</span></div>
+            <h3>矩阵基建</h3>
+            <p>分工表、台账、内容任务卡、异常按症状排查；扩号有门槛。</p>
+          </button>
+          <button class="step-card" type="button" data-nav="s5">
+            <div class="sc-top"><span class="sc-num">STEP 05</span><span class="sc-status">未开始</span></div>
+            <h3>引流</h3>
+            <p>先站内承接，外跳小范围测。私信自检 + 7 天测试表管理方法。</p>
+          </button>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>本站包含的可填表</h3>
+          <ul class="bullets">
+            <li><strong>定位：</strong>主任务句 · 三张清单 · 用户四问 · 定位句 · 12 选题树 · 发布前 7 项 · 7 天闭环勾选</li>
+            <li><strong>对标：</strong>定位小卡 · 对标账号表 · 笔记拆解 6 项 · 原创选题 3 条</li>
+            <li><strong>矩阵获客：</strong>账号角色公式 · 四类内容规划 · 三层标签 · 主页 / 转化检查</li>
+            <li><strong>矩阵基建：</strong>账号分工表 · 内容任务卡 · 异常记录 · 扩号门槛勾选</li>
+            <li><strong>引流：</strong>私信送达自检 · 引流 7 天测试表 · 站内承接自检句</li>
+          </ul>
+        </div>
+
+        <p class="footer-note">建议阅读顺序：定位 → 对标 → 矩阵获客 → 矩阵基建 → 引流。每步页面顶部可跳转原文。打印本页也可导出填写痕迹（浏览器打印）。</p>
+      </section>
+
+      <!-- STEP 1 -->
+      <section class="view" id="view-s1">
+        <div class="step-header">
+          <div class="step-kicker">STEP 01 · 定位</div>
+          <h2>先别急着发内容，先搭好最小可行定位</h2>
+          <p class="claim">冷启动第一步不是日更，也不是精装修主页，而是做出一个可验证的工作假设：长期帮哪一类人解决什么问题、为什么该你说、接下来能围绕它写出哪些内容。</p>
+          <div class="step-meta">
+            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2107674848457843182" target="_blank" rel="noopener">原文 · 起号第一步 SOP ↗</a>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>核心主张</h3>
+          <ul class="bullets">
+            <li><strong>定位是工作假设，不是漂亮简介。</strong>陌生人看标题和主页要能判断「这和我有没有关系」；自己写内容时不必每天从空白找灵感。</li>
+            <li><strong>只选一个主任务。</strong>个人 IP / 产品号 / 门店号 / 纯内容号起点不同；冷启动别把记录生活、接咨询、推产品、招人一起堆。</li>
+            <li><strong>别先追热门赛道，先盘三张清单：</strong>做过什么、别人常问什么、愿意持续研究什么。真正能撑长期输出的，是手里已有的经验与证据。</li>
+            <li><strong>目标用户写成具体时刻，</strong>不是「职场女性」「创业者」这种宽标签。</li>
+            <li><strong>主页最后再装修，且与内容对齐；</strong>「防关联」「特殊养号」不该替代定位与内容本身。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>关键公式</h3>
+          <div class="formula">
+            「我为<strong class="hl">【处在什么场景的人】</strong>，持续拆解<strong class="hl">【哪一类问题】</strong>，主要用<strong class="hl">【什么经验或内容形式】</strong>，帮助他们<strong class="hl">【完成什么下一步】</strong>。」
+          </div>
+          <div class="formula">
+            做完后应拿到四样东西：<strong class="hl">一句定位</strong> · <strong class="hl">一个目标用户场景</strong> · <strong class="hl">三条内容主线</strong> · <strong class="hl">首批 12 个选题</strong>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：账号主任务</h3>
+          <div class="form-block">
+            <div class="fb-title">接下来的 30 篇，希望账号先完成什么？</div>
+            <div class="fb-hint">30 篇不是平台规定，只是帮你暂时收住边界。答案可以是：积累专业认知 / 找到第一批客户 / 清晰个人标签 / 验证某类选题。</div>
+            <div class="field">
+              <label>「接下来的 30 篇内容，我希望这个账号先帮我完成 ______。」</label>
+              <textarea data-field="s1_task" placeholder="例如：验证「AI + 账号冷启动」选题是否有人需要，并积累第一批可收藏的方法内容"></textarea>
+            </div>
+            <div class="field">
+              <label>账号类型（主任务）</label>
+              <select data-field="s1_type">
+                <option value="">请选择</option>
+                <option>个人 IP</option>
+                <option>产品 / 品牌号</option>
+                <option>门店获客号</option>
+                <option>纯内容号</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：三张清单</h3>
+          <div class="form-block">
+            <div class="fb-title">① 我做过什么</div>
+            <div class="fb-hint">写具体项目、过程、踩过的坑、用过的工具、已跑通的微小结果。不要只写「懂运营」。</div>
+            <div class="field"><textarea data-field="s1_list1" placeholder="一条一条列…"></textarea></div>
+          </div>
+          <div class="form-block">
+            <div class="fb-title">② 别人经常问我什么</div>
+            <div class="fb-hint">翻聊天、群、评论、私信，把重复问题原样记下来。</div>
+            <div class="field"><textarea data-field="s1_list2" placeholder="原样记下重复问题…"></textarea></div>
+          </div>
+          <div class="form-block">
+            <div class="fb-title">③ 我愿意持续研究什么</div>
+            <div class="fb-hint">需要一个至少愿意继续验证三个月的主题。</div>
+            <div class="field"><textarea data-field="s1_list3" placeholder="愿意持续验证的主题…"></textarea></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：目标用户四问</h3>
+          <div class="form-block">
+            <div class="field"><label>他现在正准备完成什么任务？</label><textarea data-field="s1_u1"></textarea></div>
+            <div class="field"><label>他卡在哪一步？</label><textarea data-field="s1_u2"></textarea></div>
+            <div class="field"><label>他已经试过什么，但为什么没解决？</label><textarea data-field="s1_u3"></textarea></div>
+            <div class="field"><label>看完你的内容，他下一步能做什么？</label><textarea data-field="s1_u4"></textarea></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：定位句</h3>
+          <div class="form-block">
+            <div class="fb-hint">这句话首先是给你自己用的过滤器，不必原样放进简介。</div>
+            <div class="field"><label>完整定位句</label><textarea data-field="s1_pos" placeholder="我为【…】，持续拆解【…】，主要用【…】，帮助他们【…】。"></textarea></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：三层内容树 · 首批 12 选题</h3>
+          <div class="form-block">
+            <div class="fb-title">问题层（认出自己）· 4 条</div>
+            <div class="fb-hint">用户现在最容易误判什么、卡在哪里。</div>
+            <div class="field-row">
+              <div class="field"><input data-field="s1_q1" placeholder="选题 1" /></div>
+              <div class="field"><input data-field="s1_q2" placeholder="选题 2" /></div>
+              <div class="field"><input data-field="s1_q3" placeholder="选题 3" /></div>
+              <div class="field"><input data-field="s1_q4" placeholder="选题 4" /></div>
+            </div>
+          </div>
+          <div class="form-block">
+            <div class="fb-title">方法层（可收藏）· 4 条</div>
+            <div class="fb-hint">具体怎么做，用什么模板、步骤和工具。</div>
+            <div class="field-row">
+              <div class="field"><input data-field="s1_m1" placeholder="选题 1" /></div>
+              <div class="field"><input data-field="s1_m2" placeholder="选题 2" /></div>
+              <div class="field"><input data-field="s1_m3" placeholder="选题 3" /></div>
+              <div class="field"><input data-field="s1_m4" placeholder="选题 4" /></div>
+            </div>
+          </div>
+          <div class="form-block">
+            <div class="fb-title">证据层（建立信任）· 4 条</div>
+            <div class="fb-hint">真实过程、案例、失败记录和复盘。没有公开数据就讲过程。</div>
+            <div class="field-row">
+              <div class="field"><input data-field="s1_e1" placeholder="选题 1" /></div>
+              <div class="field"><input data-field="s1_e2" placeholder="选题 2" /></div>
+              <div class="field"><input data-field="s1_e3" placeholder="选题 3" /></div>
+              <div class="field"><input data-field="s1_e4" placeholder="选题 4" /></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>发布前清单 + 7 天闭环</h3>
+          <div class="form-block">
+            <div class="fb-title">发布前检查（原文 7 项）</div>
+            <div class="check-list">
+              <label class="check-item"><input type="checkbox" data-field="s1_ck1" /> 我能否用一句话说清这个账号先服务谁？</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_ck2" /> 我写的是一个具体场景，而不是宽泛人群吗？</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_ck3" /> 定位里有真实经历或证据支撑吗？</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_ck4" /> 能围绕它列出至少 12 个不重复的选题吗？</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_ck5" /> 问题层 / 方法层 / 证据层是否都已有内容？</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_ck6" /> 昵称、简介、置顶和正文是否在传递同一个认知？</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_ck7" /> 是否已安排发布后的记录与复盘，而不是只等涨粉？</label>
+            </div>
+          </div>
+          <div class="form-block">
+            <div class="fb-title">7 天第一个内容闭环（勾选进度）</div>
+            <div class="check-list">
+              <label class="check-item"><input type="checkbox" data-field="s1_d1" /> Day1：完成三张清单，确定单一主任务</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_d2" /> Day2：拆解对标样本（用户 / 选题 / 证据 / 评论）</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_d3" /> Day3：写出定位句，完成 12 选题测试</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_d4" /> Day4：建立三层内容树，写出首批 12 题</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_d5" /> Day5：完成前三篇草稿（问题 + 方法 + 过程）</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_d6" /> Day6：发布第一篇，观察读者真实词汇</label>
+              <label class="check-item"><input type="checkbox" data-field="s1_d7" /> Day7：复盘信号，修改后两篇（收藏 / 追问 / 主页访问）</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-steps">
+          <button class="btn" type="button" data-nav="home">← 总览</button>
+          <button class="btn btn-primary" type="button" data-nav="s2">下一步：对标 →</button>
+        </div>
+      </section>
+
+      <!-- STEP 2 -->
+      <section class="view" id="view-s2">
+        <div class="step-header">
+          <div class="step-kicker">STEP 02 · 对标</div>
+          <h2>别急着抄爆款，你可能连对标账号都找错了</h2>
+          <p class="claim">对标最容易停在「收藏爆款」。真正漏掉的是：这个账号为什么适合它、哪一部分适合你。做完应留下 5–10 个有明确学习用途的账号、几份完整拆解、若干有自己材料支撑的选题。</p>
+          <div class="step-meta">
+            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2108755538301579381" target="_blank" rel="noopener">原文 · 找对标 ↗</a>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>核心主张</h3>
+          <ul class="bullets">
+            <li><strong>先有自己的定位卡，再找对标。</strong>顺序反了，容易只抄标题和封面。</li>
+            <li><strong>粉丝量不是第一筛选器。</strong>更有用：起点与制作条件是否接近、效果是否只靠一篇、评论里是不是你要服务的人、对方优势你有没有材料支撑。</li>
+            <li><strong>四入口找样本：</strong>关键词搜索 · 推荐流补样本 · 话题页回头查作者 · 必要时再用数据工具（筛完仍要回真实主页核对）。</li>
+            <li><strong>结构可以学，经历不能借。</strong>拆完多问：我的材料能回答哪一部分？</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>单篇拆解 6 项</h3>
+          <div class="tag-row">
+            <span class="tag t1">人群与问题</span>
+            <span class="tag t1">选题切口</span>
+            <span class="tag t2">标题承诺</span>
+            <span class="tag t2">封面信息</span>
+            <span class="tag t3">正文证据</span>
+            <span class="tag t3">评论追问</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：搜索前定位小卡</h3>
+          <div class="form-block">
+            <div class="field"><label>我想服务谁</label><textarea data-field="s2_who"></textarea></div>
+            <div class="field"><label>她 / 他具体卡在哪</label><textarea data-field="s2_stuck"></textarea></div>
+            <div class="field"><label>我能提供什么</label><textarea data-field="s2_offer"></textarea></div>
+            <div class="field"><label>我现阶段能做到什么（产能 / 形式）</label><textarea data-field="s2_capacity"></textarea></div>
+            <div class="field"><label>账号希望怎么产生收入（可选）</label><textarea data-field="s2_revenue"></textarea></div>
+            <div class="field"><label>搜索词（人群 + 场景 + 问题）</label><textarea data-field="s2_keywords" placeholder="例如：小个子通勤穿搭；梨形身材上班怎么穿"></textarea></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：对标账号表</h3>
+          <div class="form-block">
+            <div class="fb-hint">每个账号旁边写清「学它什么」；写不出用途的先不深挖。决定：核心对标 / 单篇参考 / 暂不跟进。</div>
+            <div class="table-wrap">
+              <table class="fill-table">
+                <thead>
+                  <tr>
+                    <th style="width:14%">账号</th>
+                    <th style="width:12%">粉丝/形式</th>
+                    <th style="width:18%">服务人群</th>
+                    <th style="width:22%">我要学什么</th>
+                    <th style="width:16%">暂时学不了</th>
+                    <th style="width:12%">决定</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input data-field="s2_acc1_name" placeholder="名称/链接" /></td>
+                    <td><input data-field="s2_acc1_meta" /></td>
+                    <td><input data-field="s2_acc1_aud" /></td>
+                    <td><textarea data-field="s2_acc1_learn"></textarea></td>
+                    <td><input data-field="s2_acc1_skip" /></td>
+                    <td><input data-field="s2_acc1_dec" placeholder="核心/参考/暂不" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s2_acc2_name" /></td>
+                    <td><input data-field="s2_acc2_meta" /></td>
+                    <td><input data-field="s2_acc2_aud" /></td>
+                    <td><textarea data-field="s2_acc2_learn"></textarea></td>
+                    <td><input data-field="s2_acc2_skip" /></td>
+                    <td><input data-field="s2_acc2_dec" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s2_acc3_name" /></td>
+                    <td><input data-field="s2_acc3_meta" /></td>
+                    <td><input data-field="s2_acc3_aud" /></td>
+                    <td><textarea data-field="s2_acc3_learn"></textarea></td>
+                    <td><input data-field="s2_acc3_skip" /></td>
+                    <td><input data-field="s2_acc3_dec" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s2_acc4_name" /></td>
+                    <td><input data-field="s2_acc4_meta" /></td>
+                    <td><input data-field="s2_acc4_aud" /></td>
+                    <td><textarea data-field="s2_acc4_learn"></textarea></td>
+                    <td><input data-field="s2_acc4_skip" /></td>
+                    <td><input data-field="s2_acc4_dec" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s2_acc5_name" /></td>
+                    <td><input data-field="s2_acc5_meta" /></td>
+                    <td><input data-field="s2_acc5_aud" /></td>
+                    <td><textarea data-field="s2_acc5_learn"></textarea></td>
+                    <td><input data-field="s2_acc5_skip" /></td>
+                    <td><input data-field="s2_acc5_dec" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：笔记拆解（较好 + 普通各可填一份）</h3>
+          <div class="form-block">
+            <div class="fb-title">拆解 A · 表现较好的一篇</div>
+            <div class="field-row">
+              <div class="field"><label>所属账号 / 链接</label><input data-field="s2_na_link" /></div>
+              <div class="field"><label>发布 / 观察日期</label><input data-field="s2_na_date" /></div>
+            </div>
+            <div class="field"><label>① 人群与问题</label><textarea data-field="s2_na_1"></textarea></div>
+            <div class="field"><label>② 选题切口</label><textarea data-field="s2_na_2"></textarea></div>
+            <div class="field"><label>③ 标题承诺（正文有没有兑现？）</label><textarea data-field="s2_na_3"></textarea></div>
+            <div class="field"><label>④ 封面信息（对比 / 结果 / 装饰？）</label><textarea data-field="s2_na_4"></textarea></div>
+            <div class="field"><label>⑤ 正文证据</label><textarea data-field="s2_na_5"></textarea></div>
+            <div class="field"><label>⑥ 评论追问 → 能否写成下一篇？</label><textarea data-field="s2_na_6"></textarea></div>
+            <div class="field"><label>我的材料能回答哪一部分？原创切口</label><textarea data-field="s2_na_mine"></textarea></div>
+          </div>
+          <div class="form-block">
+            <div class="fb-title">拆解 B · 普通一篇（对照看差别）</div>
+            <div class="field-row">
+              <div class="field"><label>所属账号 / 链接</label><input data-field="s2_nb_link" /></div>
+              <div class="field"><label>发布 / 观察日期</label><input data-field="s2_nb_date" /></div>
+            </div>
+            <div class="field"><label>①–⑥ 简记 + 与较好篇的关键差别</label><textarea data-field="s2_nb_diff"></textarea></div>
+            <div class="field"><label>我的原创切口</label><textarea data-field="s2_nb_mine"></textarea></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：3 个原创选题</h3>
+          <div class="form-block">
+            <div class="fb-hint">每个写清：服务谁、标题承诺什么、用什么证据、读者看完能做什么。</div>
+            <div class="field"><label>选题 1</label><textarea data-field="s2_topic1"></textarea></div>
+            <div class="field"><label>选题 2</label><textarea data-field="s2_topic2"></textarea></div>
+            <div class="field"><label>选题 3</label><textarea data-field="s2_topic3"></textarea></div>
+          </div>
+        </div>
+
+        <div class="nav-steps">
+          <button class="btn" type="button" data-nav="s1">← 定位</button>
+          <button class="btn btn-primary" type="button" data-nav="s3">下一步：矩阵获客 →</button>
+        </div>
+      </section>
+
+      <!-- STEP 3 -->
+      <section class="view" id="view-s3">
+        <div class="step-header">
+          <div class="step-kicker">STEP 03 · 矩阵获客</div>
+          <h2>矩阵怎么获客：角色分工，而不是多号复制</h2>
+          <p class="claim">矩阵最难的不是账号数量，而是每个号有效。换头像、换标题、发同质内容，叫复制，不叫矩阵。真正能带来获客的矩阵，是让不同账号从不同入口，解决同一个客户的不同问题。</p>
+          <div class="step-meta">
+            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2105899003359756431" target="_blank" rel="noopener">原文 · 矩阵获客 ↗</a>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>核心主张</h3>
+          <ul class="bullets">
+            <li><strong>内容获客系统：</strong>主号建信任，垂直号接不同搜索需求，不同入口覆盖不同阶段，主页和私信完成转化。</li>
+            <li><strong>每个号先回答三句：</strong>服务谁、解决什么问题、用户为什么关注。</li>
+            <li><strong>一个主题至少拆四类：</strong>搜索型 / 经验型 / 案例型 / 观点型。</li>
+            <li><strong>标签分三层：</strong>大流量标签扩触达、问题标签接明确意图、成交标签离咨询更近；不要所有笔记都抢大词。</li>
+            <li><strong>真正决定获客的是主页，不是单篇。</strong>链路：曝光 → 主页 → 置顶 → 私信 / 咨询。</li>
+            <li><strong>先跑通「一个主号 + 一个测试号」。</strong>低曝光但精准咨询，有时比空热闹更值得放大。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>关键公式</h3>
+          <div class="formula">账号角色 = <strong class="hl">目标人群</strong> + <strong class="hl">高频问题</strong> + <strong class="hl">内容视角</strong></div>
+          <div class="formula">案例四件事：问题 → 原来怎么做 → 哪步变了 → 结果</div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：账号角色卡（主号 + 测试号）</h3>
+          <div class="form-block">
+            <div class="fb-title">主账号</div>
+            <div class="field"><label>一句话角色</label><input data-field="s3_role1" placeholder="面向谁，分享什么视角" /></div>
+            <div class="field-row">
+              <div class="field"><label>服务谁</label><input data-field="s3_who1" /></div>
+              <div class="field"><label>高频问题</label><input data-field="s3_q1" /></div>
+            </div>
+            <div class="field"><label>用户为什么关注它</label><textarea data-field="s3_why1"></textarea></div>
+            <div class="field"><label>关键词层级侧重</label><select data-field="s3_kw1"><option value="">请选择</option><option>大流量标签为主</option><option>问题标签为主</option><option>成交标签为主</option><option>混合比例</option></select></div>
+          </div>
+          <div class="form-block">
+            <div class="fb-title">测试账号</div>
+            <div class="field"><label>一句话角色</label><input data-field="s3_role2" /></div>
+            <div class="field-row">
+              <div class="field"><label>服务谁</label><input data-field="s3_who2" /></div>
+              <div class="field"><label>高频问题</label><input data-field="s3_q2" /></div>
+            </div>
+            <div class="field"><label>用户为什么关注它</label><textarea data-field="s3_why2"></textarea></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：一个主题 · 四类内容</h3>
+          <div class="form-block">
+            <div class="field"><label>核心主题</label><input data-field="s3_theme" placeholder="例如：小红书冷启动 / AI 产品获客" /></div>
+            <div class="field"><label>搜索型（先被人找到）</label><textarea data-field="s3_c_search" placeholder="标题方向…"></textarea></div>
+            <div class="field"><label>经验型（操作记录，建信任）</label><textarea data-field="s3_c_exp"></textarea></div>
+            <div class="field"><label>案例型（问题→原做法→变化→结果）</label><textarea data-field="s3_c_case"></textarea></div>
+            <div class="field"><label>观点型（让人记住判断）</label><textarea data-field="s3_c_view"></textarea></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：三层标签</h3>
+          <div class="form-block">
+            <div class="field"><label>大流量标签</label><input data-field="s3_tag1" placeholder="AI / 职场 / 创业 / 小红书运营…" /></div>
+            <div class="field"><label>问题标签</label><input data-field="s3_tag2" placeholder="小红书没有流量 / 如何获客…" /></div>
+            <div class="field"><label>成交标签</label><input data-field="s3_tag3" placeholder="增长咨询 / 代运营 / 内容获客…" /></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：主页与转化检查</h3>
+          <div class="form-block">
+            <div class="check-list">
+              <label class="check-item"><input type="checkbox" data-field="s3_ck1" /> 主页说清：服务对象 / 具体能力 / 真实经历 / 下一步动作</label>
+              <label class="check-item"><input type="checkbox" data-field="s3_ck2" /> 置顶三类：我是谁做过什么 · 能解决什么 · 如何联系</label>
+              <label class="check-item"><input type="checkbox" data-field="s3_ck3" /> 在记：曝光 · 主页访问 · 访问率 · 私信 · 有效咨询 · 成交</label>
+              <label class="check-item"><input type="checkbox" data-field="s3_ck4" /> 已跑通最小模型：一个主号 + 一个测试号（再考虑扩）</label>
+            </div>
+            <div class="field" style="margin-top:12px"><label>备注 / 当前瓶颈</label><textarea data-field="s3_note"></textarea></div>
+          </div>
+        </div>
+
+        <div class="nav-steps">
+          <button class="btn" type="button" data-nav="s2">← 对标</button>
+          <button class="btn btn-primary" type="button" data-nav="s4">下一步：矩阵基建 →</button>
+        </div>
+      </section>
+
+      <!-- STEP 4 -->
+      <section class="view" id="view-s4">
+        <div class="step-header">
+          <div class="step-kicker">STEP 04 · 矩阵基建</div>
+          <h2>账号准备、设备、IP 与异常：管理清楚、一次改一个变量</h2>
+          <p class="claim">基建重点不是「防关联玄学」，而是管理清楚、有记录、能归因：分工表、台账、设备对应、异常按症状排查、素材库与内容任务卡。</p>
+          <div class="step-meta">
+            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2106653568300192062" target="_blank" rel="noopener">原文 · 矩阵实操手册 ↗</a>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>核心主张</h3>
+          <ul class="bullets">
+            <li><strong>启动前先填分工表：</strong>选定产品和一类客户，再定每个号负责的问题；第一轮不要同时测多个产品、多个行业和大量账号。</li>
+            <li><strong>账号准备：</strong>正规注册与可接收验证；建台账；敏感凭证不进共享表；不把来历不明的号当基础配置。</li>
+            <li><strong>「一机一号」是管理方式，不是防封保证；</strong>排查时一次只改一个条件。</li>
+            <li><strong>同主题跨号展开要改问题和证据，</strong>只换封面颜色不算新内容。</li>
+            <li><strong>异常按症状分开记、分开改；</strong>阅读低时别同时大改定位、删稿、换环境。</li>
+            <li><strong>扩号有门槛：</strong>权限清楚、内容可复用、已有有效咨询信号、好做法经得起再测、说得清新号服务谁。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：账号分工表</h3>
+          <div class="form-block">
+            <div class="fb-hint">示例结构来自原文：产品教程号 / 岗位场景号 / 案例解答号。每个号补齐：负责人、每周可投入时间、审核人、咨询承接人。</div>
+            <div class="table-wrap">
+              <table class="fill-table">
+                <thead>
+                  <tr>
+                    <th>账号</th>
+                    <th>目标读者</th>
+                    <th>主要内容</th>
+                    <th>需要准备的素材</th>
+                    <th>负责人</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input data-field="s4_div1_acc" placeholder="如：产品教程号" /></td>
+                    <td><input data-field="s4_div1_aud" /></td>
+                    <td><textarea data-field="s4_div1_content"></textarea></td>
+                    <td><textarea data-field="s4_div1_mat"></textarea></td>
+                    <td><input data-field="s4_div1_owner" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s4_div2_acc" placeholder="如：岗位场景号" /></td>
+                    <td><input data-field="s4_div2_aud" /></td>
+                    <td><textarea data-field="s4_div2_content"></textarea></td>
+                    <td><textarea data-field="s4_div2_mat"></textarea></td>
+                    <td><input data-field="s4_div2_owner" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s4_div3_acc" placeholder="如：案例解答号" /></td>
+                    <td><input data-field="s4_div3_aud" /></td>
+                    <td><textarea data-field="s4_div3_content"></textarea></td>
+                    <td><textarea data-field="s4_div3_mat"></textarea></td>
+                    <td><input data-field="s4_div3_owner" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：内容任务卡</h3>
+          <div class="form-block">
+            <div class="fb-title">下一篇任务卡</div>
+            <div class="field"><label>发给谁看</label><input data-field="s4_card_who" /></div>
+            <div class="field"><label>回答什么具体问题</label><textarea data-field="s4_card_q"></textarea></div>
+            <div class="field"><label>用哪些素材支撑</label><textarea data-field="s4_card_mat"></textarea></div>
+            <div class="field"><label>读者看完能做什么</label><textarea data-field="s4_card_next"></textarea></div>
+            <div class="field-row">
+              <div class="field"><label>发在哪个账号</label><input data-field="s4_card_acc" /></div>
+              <div class="field"><label>由谁审核</label><input data-field="s4_card_review" /></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：异常记录</h3>
+          <div class="form-block">
+            <div class="fb-hint">统一记录字段来自原文。一次只改变一个条件。</div>
+            <div class="field-row">
+              <div class="field"><label>发生时间</label><input data-field="s4_ex_time" /></div>
+              <div class="field"><label>账号与设备</label><input data-field="s4_ex_acc" /></div>
+            </div>
+            <div class="field"><label>具体症状</label><select data-field="s4_ex_type">
+              <option value="">请选择</option>
+              <option>登录失败 / 收不到验证码</option>
+              <option>笔记或功能受限</option>
+              <option>发布成功但阅读偏低</option>
+              <option>有阅读或咨询但无转化</option>
+              <option>其他</option>
+            </select></div>
+            <div class="field"><label>平台提示</label><textarea data-field="s4_ex_tip"></textarea></div>
+            <div class="field"><label>近期变化</label><textarea data-field="s4_ex_change"></textarea></div>
+            <div class="field"><label>本次处理 / 结果 / 下一位跟进人</label><textarea data-field="s4_ex_action"></textarea></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>扩号门槛勾选</h3>
+          <div class="form-block">
+            <div class="check-list">
+              <label class="check-item"><input type="checkbox" data-field="s4_exp1" /> 现有账号身份、权限和设备管理清楚</label>
+              <label class="check-item"><input type="checkbox" data-field="s4_exp2" /> 内容能持续生产，已有可复用素材与方法</label>
+              <label class="check-item"><input type="checkbox" data-field="s4_exp3" /> 出现了与业务相关的咨询 / 使用 / 成交信号</label>
+              <label class="check-item"><input type="checkbox" data-field="s4_exp4" /> 表现较好的做法经过后续测试，而非一次偶然</label>
+              <label class="check-item"><input type="checkbox" data-field="s4_exp5" /> 能说明新增账号服务谁、增加多少工作、由谁负责</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-steps">
+          <button class="btn" type="button" data-nav="s3">← 矩阵获客</button>
+          <button class="btn btn-primary" type="button" data-nav="s5">下一步：引流 →</button>
+        </div>
+      </section>
+
+      <!-- STEP 5 -->
+      <section class="view" id="view-s5">
+        <div class="step-header">
+          <div class="step-kicker">STEP 05 · 引流</div>
+          <h2>低风险引流：先分层承接，硬导流克制</h2>
+          <p class="claim">「发微信号」不是固定技巧，更像持续变化的测试题。核心逻辑：能用平台内工具解决的，先站内；必须外跳的，小范围测；高风险动作当观察项，不当默认 SOP。</p>
+          <div class="step-meta">
+            <a class="orig-link" href="https://x.com/JessiCao_JC/status/2108027588052742415" target="_blank" rel="noopener">原文 · 引流教程 ↗</a>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>核心主张</h3>
+          <ul class="bullets">
+            <li><strong>先判断私信是否真送达。</strong>自己显示已发送，不代表对方看得到；新话术先互测并记录。</li>
+            <li><strong>第一优先级是站内承接：</strong>店铺商品、置顶 FAQ、常见问题笔记、评论与私信固定答复。</li>
+            <li><strong>路径分层、按意图走：</strong>低意图用评论 / 笔记 / 店铺 / 群聊；中意图私信给资料或说明；高意图再进入更深咨询。</li>
+            <li><strong>自定义表情、辅助号、头像/置顶硬放联系方式、群聊置顶，都是可测项而非免死金牌。</strong></li>
+            <li><strong>只改词不改逻辑，本质还是硬导流。</strong></li>
+            <li><strong>可复用的是测试习惯：</strong>小步跑、认真记、异常就停、跑通再放大——不是某个暗号。</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>关键自检</h3>
+          <div class="formula">如果不丢联系方式，这个用户在站内还能不能往前走一步？走不了 → 先补站内承接，再谈外跳。</div>
+          <div class="field"><label>你的回答 / 缺口</label><textarea data-field="s5_selfcheck" placeholder="站内还能怎么往前走？缺什么？"></textarea></div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：私信送达自检（最小测试）</h3>
+          <div class="form-block">
+            <div class="fb-hint">原文建议字段：发送账号、接收账号、内容类型、长按后是否有「引用」、对方是否实际看到。内容类型：纯文字 / 图片 / 表情 / 商品 / 群聊入口 / 笔记入口。</div>
+            <div class="table-wrap">
+              <table class="fill-table">
+                <thead>
+                  <tr>
+                    <th>发送账号</th>
+                    <th>接收账号</th>
+                    <th>内容类型</th>
+                    <th>有「引用」？</th>
+                    <th>对方可见？</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input data-field="s5_pm1_from" /></td>
+                    <td><input data-field="s5_pm1_to" /></td>
+                    <td><input data-field="s5_pm1_type" placeholder="纯文字/图片…" /></td>
+                    <td><input data-field="s5_pm1_quote" placeholder="是/否" /></td>
+                    <td><input data-field="s5_pm1_seen" placeholder="是/否" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s5_pm2_from" /></td>
+                    <td><input data-field="s5_pm2_to" /></td>
+                    <td><input data-field="s5_pm2_type" /></td>
+                    <td><input data-field="s5_pm2_quote" /></td>
+                    <td><input data-field="s5_pm2_seen" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s5_pm3_from" /></td>
+                    <td><input data-field="s5_pm3_to" /></td>
+                    <td><input data-field="s5_pm3_type" /></td>
+                    <td><input data-field="s5_pm3_quote" /></td>
+                    <td><input data-field="s5_pm3_seen" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>可填：引流 7 天测试表</h3>
+          <div class="form-block">
+            <div class="fb-hint">字段：日期 · 账号类型 · 场景 · 内容类型 · 用户意图 · 是否有引用 · 对方是否可见 · 是否有效咨询 · 24h 是否异常 · 是否放大。</div>
+            <div class="table-wrap">
+              <table class="fill-table">
+                <thead>
+                  <tr>
+                    <th>日期</th>
+                    <th>账号类型</th>
+                    <th>场景</th>
+                    <th>内容类型</th>
+                    <th>意图</th>
+                    <th>引用/可见</th>
+                    <th>有效咨询</th>
+                    <th>异常?</th>
+                    <th>放大?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input data-field="s5_d1_date" placeholder="D1" /></td>
+                    <td><input data-field="s5_d1_acc" placeholder="主/辅/店" /></td>
+                    <td><input data-field="s5_d1_scene" placeholder="私信/置顶…" /></td>
+                    <td><input data-field="s5_d1_type" /></td>
+                    <td><input data-field="s5_d1_intent" placeholder="低/中/高" /></td>
+                    <td><input data-field="s5_d1_vis" /></td>
+                    <td><input data-field="s5_d1_lead" /></td>
+                    <td><input data-field="s5_d1_risk" /></td>
+                    <td><input data-field="s5_d1_scale" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s5_d2_date" /></td>
+                    <td><input data-field="s5_d2_acc" /></td>
+                    <td><input data-field="s5_d2_scene" /></td>
+                    <td><input data-field="s5_d2_type" /></td>
+                    <td><input data-field="s5_d2_intent" /></td>
+                    <td><input data-field="s5_d2_vis" /></td>
+                    <td><input data-field="s5_d2_lead" /></td>
+                    <td><input data-field="s5_d2_risk" /></td>
+                    <td><input data-field="s5_d2_scale" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s5_d3_date" /></td>
+                    <td><input data-field="s5_d3_acc" /></td>
+                    <td><input data-field="s5_d3_scene" /></td>
+                    <td><input data-field="s5_d3_type" /></td>
+                    <td><input data-field="s5_d3_intent" /></td>
+                    <td><input data-field="s5_d3_vis" /></td>
+                    <td><input data-field="s5_d3_lead" /></td>
+                    <td><input data-field="s5_d3_risk" /></td>
+                    <td><input data-field="s5_d3_scale" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s5_d4_date" /></td>
+                    <td><input data-field="s5_d4_acc" /></td>
+                    <td><input data-field="s5_d4_scene" /></td>
+                    <td><input data-field="s5_d4_type" /></td>
+                    <td><input data-field="s5_d4_intent" /></td>
+                    <td><input data-field="s5_d4_vis" /></td>
+                    <td><input data-field="s5_d4_lead" /></td>
+                    <td><input data-field="s5_d4_risk" /></td>
+                    <td><input data-field="s5_d4_scale" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s5_d5_date" /></td>
+                    <td><input data-field="s5_d5_acc" /></td>
+                    <td><input data-field="s5_d5_scene" /></td>
+                    <td><input data-field="s5_d5_type" /></td>
+                    <td><input data-field="s5_d5_intent" /></td>
+                    <td><input data-field="s5_d5_vis" /></td>
+                    <td><input data-field="s5_d5_lead" /></td>
+                    <td><input data-field="s5_d5_risk" /></td>
+                    <td><input data-field="s5_d5_scale" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s5_d6_date" /></td>
+                    <td><input data-field="s5_d6_acc" /></td>
+                    <td><input data-field="s5_d6_scene" /></td>
+                    <td><input data-field="s5_d6_type" /></td>
+                    <td><input data-field="s5_d6_intent" /></td>
+                    <td><input data-field="s5_d6_vis" /></td>
+                    <td><input data-field="s5_d6_lead" /></td>
+                    <td><input data-field="s5_d6_risk" /></td>
+                    <td><input data-field="s5_d6_scale" /></td>
+                  </tr>
+                  <tr>
+                    <td><input data-field="s5_d7_date" /></td>
+                    <td><input data-field="s5_d7_acc" /></td>
+                    <td><input data-field="s5_d7_scene" /></td>
+                    <td><input data-field="s5_d7_type" /></td>
+                    <td><input data-field="s5_d7_intent" /></td>
+                    <td><input data-field="s5_d7_vis" /></td>
+                    <td><input data-field="s5_d7_lead" /></td>
+                    <td><input data-field="s5_d7_risk" /></td>
+                    <td><input data-field="s5_d7_scale" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3><span class="dot"></span>原文建议执行顺序（勾选）</h3>
+          <div class="form-block">
+            <div class="check-list">
+              <label class="check-item"><input type="checkbox" data-field="s5_ord1" /> ① 先补齐平台内承接（商品 / FAQ / 资料说明 / 评论话术）</label>
+              <label class="check-item"><input type="checkbox" data-field="s5_ord2" /> ② 做私信可见性测试（先测文字、商品、笔记入口，再测图片表情）</label>
+              <label class="check-item"><input type="checkbox" data-field="s5_ord3" /> ③ 搭辅助号：先发 3–5 条正常内容，1–2 周后再测承接</label>
+              <label class="check-item"><input type="checkbox" data-field="s5_ord4" /> ④ 小范围测试群聊置顶，观察入群质量与账号状态</label>
+              <label class="check-item"><input type="checkbox" data-field="s5_ord5" /> ⑤ 每 7 天复盘：保留稳定有效路径，异常就降频；主号不拿硬放联系方式赌博</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-steps">
+          <button class="btn" type="button" data-nav="s4">← 矩阵基建</button>
+          <button class="btn btn-primary" type="button" data-nav="home">回到总览</button>
+        </div>
+
+        <p class="footer-note">
+          以上观点整理自 <a href="https://x.com/JessiCao_JC" target="_blank" rel="noopener">@JessiCao_JC</a> 五篇原帖，本站为结构化整理 / 合集导览，非原文转载。所有引流方法都不能保证完全合规；平台规则会变，细节与模板以她原文为准。
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
